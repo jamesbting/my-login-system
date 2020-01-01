@@ -1,4 +1,6 @@
 # my-login-system
-This is a "login system" that was created by me as my first personal project. It lets users login, change passwords, or create a new account. The purpose of this project was as an introduction to object-oriented design and file IO in Python. Real account passwords should never be stored using this program, as it is not encrypted.
+This is a login system that I built in Python as a personal project. It started out as just a single .py file reading from a .txt file, that I built to practice OOD and File IO.
 
-A future goal is to have the usernames and passwords encrypted in such a way that the if you only have the text file that stores the usernames and passwords, then you won't be able to read it without the program.
+As an upgrade, I hoped to include a cryptographic hash function that will hide the password in the text file and prevent it from being read by opening the text file. 
+
+In the process of developing the upgrade, the program now has a GUI that was built using the tkinter library,a SHA 256 encryption to hide the passwords from prying eyes, a config file to manage the name of the database, and a .db file that stores all the passwords and is accesed using the SQLite3 library.
